@@ -1,0 +1,14 @@
+.about-bg {
+  background: url('/images/about-bg.jpeg') no-repeat center center/cover;
+  position: relative;
+}
+
+.about-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  backdrop-filter: blur(4px); /* Glassmorphism effect */
+}
+
+  
