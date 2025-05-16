@@ -1,6 +1,5 @@
 "use client";
-import react from "react";
-import styles from "./Services.module.css";
+
 import { motion } from "framer-motion";
 
 const Services = () => {

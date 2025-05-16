@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -12,7 +12,6 @@ import {
 } from "swiper/modules";
 import Image from "next/image";
 import type { Swiper as SwiperType } from "swiper";
-import Gallery from "./Gallery.module.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -48,10 +47,6 @@ const BrandingCarousel = () => {
     { id: 2, image: "/images/wall-2.png", alt: "Branding Visual 2" },
     { id: 3, image: "/images/branding-3.jpeg", alt: "Branding Visual 3" },
   ];
-  const fadeInUp = {
-    hidden: { opacity: 0, y: 40, x: 10 },
-    visible: { opacity: 1, y: 0 },
-  };
 
   return (
     <section className="relative py-20 bg-gray-100/20 w-full items-center justify-center overflow-x-hidden">
@@ -121,10 +116,12 @@ const BrandingCarousel = () => {
                   </div>
                 </SwiperSlide>
               ))}
-            </Swiper>
-
-            {/* Pagination bullets */}
-            <div className="flex justify-center mt-6 space-x-2 swiper-pagination" />
+              
+            </Swiper> 
+        <div className="relative flex top-20 left-100 -translate-x-1/2 -translate-y-1/2 z-10 cursor-pointer gap-2.5">
+        <ArrowRightIcon className="h-6 w-6 text-white " />
+    
+        </div>
           </div>
         </motion.div>
         <motion.div

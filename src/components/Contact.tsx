@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import { EnvelopeIcon, PhoneIcon, UserIcon } from "@heroicons/react/24/outline";
 import { ChatBubbleLeftRightIcon } from "@heroicons/react/24/outline";
-import styles from "./Contact.module.css";
 
 const Contact = () => {
   return (
