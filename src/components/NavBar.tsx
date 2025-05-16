@@ -29,7 +29,7 @@ export default function FullscreenNav() {
 
       {/* Hamburger/X button */}
       <button
-        className="fixed top-6 right-6 z-50 flex flex-col justify-center items-center w-10 h-10 group bg-secondary"
+        className="fixed top-6 right-6 z-50 flex flex-col justify-center items-center w-10 h-10 group "
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Toggle menu"
       >

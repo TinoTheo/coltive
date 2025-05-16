@@ -67,7 +67,7 @@ const BrandingCarousel = () => {
         </h1>
       </div>
       {/*carousel 01*/}
-      <div className="flex h-[100vh]">
+      <div className=" relative md:flex  m-20 md:m-0">
         <motion.div
           initial={{ opacity: 0, y: 0, x: 20 }}
           whileInView={{ opacity: 1, y: 0, x: 0 }}
@@ -132,9 +132,9 @@ const BrandingCarousel = () => {
           whileInView={{ opacity: 1, y: 0, x: 0 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
           viewport={{ once: false, amount: 0.5 }}
-          className="w-full md:w-[30vw] mx-auto md:mx-0 md:right-1/6 relative z-10 p-4 mt-50  "
+          className="w-full md:w-[30vw] mx-auto md:mx-0 md:right-1/6 md:relative z-10 p-4 mt-0 md:mt-50 text-center md:text-left "
         >
-          <h2 className="text-[32pt] md:text-[56pt]  text-white font-bold mb-4 leading-tight">
+          <h2 className="text-[18pt] md:text-[56pt]  text-white font-bold mb-4 md:leading-tight ">
             Coltive Studios&apos; Branding
           </h2>
           <p className="text-white text-base md:text-xl">
@@ -144,18 +144,18 @@ const BrandingCarousel = () => {
         </motion.div>
       </div>
       {/*carousel 02*/}
-      <div className="flex h-[100vh] ">
+      <div className="relative md:flex  m-20 md:m-0">
         <motion.div
           initial={{ opacity: 0, y: 0, x: -20 }}
           whileInView={{ opacity: 1, y: 0, x: 0 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
           viewport={{ once: false, amount: 0.9 }}
-          className="w-full md:w-[35vw] md:mx-0 md:top-20 md:left-1/4 relative z-10 text-center md:text-left p-4 bg-secondary/65 h-90 border-l-accent border-l-8"
+          className="w-full md:w-[35vw] md:mx-0 md:top-20 md:left-1/4 relative z-10 text-center md:text-left p-4  md:bg-secondary/65 md:h-90 border-l-accent border-l-8"
         >
-          <h2 className="text-[32pt] md:text-[56pt] text-white font-bold mb-4 leading-tight text-right md:text-right ">
+          <h2 className="text-[18pt] md:text-[56pt] text-white font-bold mb-4 leading-tight text-center md:text-right ">
             Coltive Studios&apos; Branding
           </h2>
-          <p className="text-white text-base md:text-xl text-right w-100 float-right">
+          <p className="text-white md:text-xl text-center md:text-right md:w-100 md:float-right text-[10pt]">
             Our visual identity reflects our creative spirit, and we&apos;re
             excited to share the elements that bring our brand to life.
           </p>
@@ -166,7 +166,7 @@ const BrandingCarousel = () => {
           whileInView={{ opacity: 1, y: 0, x: 0 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
           viewport={{ once: false, amount: 0.5 }}
-          className="relative container mx-auto px-4 w-full md:w-1/2 mt-8"
+          className="relative container md:mx-auto md:px-4 w-100 md:w-1/2 mt-8 -left-1/3 md:-left-0"
         >
           <div className="relative group">
             <Swiper
@@ -220,7 +220,7 @@ const BrandingCarousel = () => {
         </motion.div>
       </div>
       {/*carousel 03*/}
-      <div className="h-[100vh] flex">
+      <div className="h-[100vh]  md:flex  m-20 md:m-0">
         <div className="absolute inset-0 z-0 pointer-events-none">
           {/* Vertical lines */}
           {[...Array(10)].map((_, i) => (
@@ -240,15 +240,15 @@ const BrandingCarousel = () => {
             />
           ))}
         </div>
-        <div className="relative bg-primary/5 flex w-full items-center justify-center  h-100 border-b-accent-3 border-b-8 top-1/3 ">
+        <div className="relative bg-primary/5 md:flex md:w-full md:items-center md:justify-center  md:h-100 border-b-accent-3 border-b-8 top-1/3 ">
           <motion.div
             initial={{ opacity: 0, y: 0, x: -20 }}
             whileInView={{ opacity: 1, y: 0, x: 0 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
             viewport={{ once: false, amount: 0.5 }}
-            className="w-full md:w-[30vw] mx-auto md:mx-0 md:left-50 relative text-left md:text-left p-4 "
+            className="w-full md:w-[30vw] mx-auto md:mx-0 md:left-50 relative text-center md:text-left p-4 "
           >
-            <h2 className="text-[32pt] md:text-[56pt] text-white font-bold mb-4 leading-tight">
+            <h2 className="text-[18pt] md:text-[56pt] text-white font-bold mb-4 leading-tight">
               Coltive Studios&apos; Branding
             </h2>
             <p className="text-white text-base md:text-xl">
@@ -262,7 +262,7 @@ const BrandingCarousel = () => {
             whileInView={{ opacity: 1, y: 0, x: 0 }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
             viewport={{ once: false, amount: 0.5 }}
-            className="relative container mx-auto px-4 w-full md:w-1/2 mt-8"
+            className="relative container mx-auto px-4 w-100 md:w-1/2 mt-8 -left-1/3 md:-left-0"
           >
             <div className="relative group ">
               <Swiper
@@ -339,13 +339,13 @@ const BrandingCarousel = () => {
         </div>
       </div>
       {/*carousel 04*/}
-      <div className="flex h-[100vh] ">
+      <div className="relative md:flex  m-20 md:m-0">
         <motion.div
           initial={{ opacity: 0, y: 0, x: 20 }}
           whileInView={{ opacity: 1, y: 0, x: 0 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
           viewport={{ once: false, amount: 0.5 }}
-          className="relative container mx-auto px-4 w-full md:w-1/2 mt-8"
+          className="relative container mx-auto px-4 w-100 md:w-1/2 mt-8 right-1/3 md:right-0"
         >
           <div className="relative group">
             <Swiper
@@ -402,12 +402,12 @@ const BrandingCarousel = () => {
           whileInView={{ opacity: 1, y: 0, x: 0 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
           viewport={{ once: false, amount: 0.9 }}
-          className="concave-left w-full md:w-[35vw] md:mx-0 md:top-20 md:right-1/4 relative z-10 text-center md:text-left p-4 bg-accent-3/65 h-90 border-r-accent border-r-8"
+          className="w-full md:w-[35vw] md:mx-0 md:top-20 md:right-1/4 relative z-10 text-center md:text-left p-4 md:bg-accent-3/65 h-50 md:h-90 border-r-accent border-r-8"
         >
-          <h2 className="text-[32pt] md:text-[56pt] text-white font-bold mb-4 leading-tight text-right md:text-right ">
+          <h2 className="text-[18pt] md:text-[56pt] text-white font-bold mb-4 leading-tight text-center md:text-right ">
             Coltive Studios&apos; Branding
           </h2>
-          <p className="text-white text-base md:text-xl text-right w-100 float-right">
+          <p className="text-white  md:text-xl text-center md:text-right md:w-100 float-right text-[10pt]">
             Our visual identity reflects our creative spirit, and we&apos;re
             excited to share the elements that bring our brand to life.
           </p>
