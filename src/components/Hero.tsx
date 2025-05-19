@@ -48,10 +48,10 @@ const icons = [
 
 const Hero = () => {
   return (
-    <div className="hero relative w-full min-h-screen bg-black bg-[url(/images/hero-bg.jpeg)] bg-cover bg-no-repeat bg-fixed flex items-center justify-center ">
+    <div className="hero relative w-full h-screen bg-black bg-[url(/images/hero-bg.jpeg)] bg-cover bg-no-repeat bg-fixed flex items-center justify-center ">
       <div className="absolute bg-black/55 inset-0 bg-opacity-60 backdrop-blur-none z-0"></div>
 
-      <div className="relative z-10 px-6 md:px-16 text-center md:text-left max-w-7xl w-full -top-20 md:top-0 ">
+      <div className="relative z-10 px-6 sm:px-16 text-center sm:text-left max-w-7xl w-full -top-20 sm:top-0 ">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -91,7 +91,7 @@ const Hero = () => {
         </motion.div>
 
         {/* Cards */}
-        <div className=" grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-16 relative hidden md:grid">
+        <div className=" grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-16 relative hidden md:grid">
           {[
             {
               title: "Inspiration",
@@ -122,7 +122,7 @@ const Hero = () => {
       </div>
 
       {/* Socials - unchanged */}
-      <div className="socials absolute flex items-center justify-center w-[90vw] md:w-[30vw] gap-3 md:gap-8 bg-secondary p-2 md:p-4 md:h-10 bottom-20 md:bottom-12 rounded-full">
+      <div className="socials absolute flex items-center justify-center min-w-auto sm:max-w-[90vw] gap-3 sm:gap-8 bg-secondary p-2 sm:p-4 sm:h-10 bottom-20 sm:bottom-12 lg:bottom-5 mt-5 rounded-full">
       {icons.map(icon => (
         <div key={icon.id} className="social-link w-8 h-8 md:w-10 md:h-10 p-2 md:p-2 rounded-full">{icon.svg}</div>
       ))}
